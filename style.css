@@ -44,6 +44,8 @@ table {
 body { font-family: sans-serif;}
 a { text-decoration: none;}
 
+a:hover { color: #ff0000; }
+
 .icon {
   font-family: "Font Awesome 5 Free"; 
   font-weight: 900; 
@@ -241,9 +243,6 @@ header .icon {
   font-size: 0.6em;
   text-transform: capitalize;
 }
-
-
-
 
 .main-storage { width: 80%; }
 

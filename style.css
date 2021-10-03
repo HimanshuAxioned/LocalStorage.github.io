@@ -212,6 +212,7 @@ header .icon {
 
 .agosto h3 { 
   padding-bottom: 2em;
+  padding-left: 1em;
   color: #309298;
   font-weight: 700;
   text-transform: capitalize;
@@ -244,7 +245,28 @@ header .icon {
   text-transform: capitalize;
 }
 
-.main-storage { width: 80%; }
+.main-storage { 
+  width: 80%; 
+  padding: 0 1em;
+}
+
+.main-storage h2 { 
+  padding-bottom: 1.8em;
+  font-size: 1.2em;
+  font-weight: 700; 
+}
+
+.main-storage h2::first-letter { text-transform: capitalize;}
+
+.main-storage p { 
+  font-size: 0.7em; 
+  padding-bottom: 1.8em;
+}
+
+.main-storage form { 
+  width: 50%;
+  margin: 0 auto;
+ }
 
 .main-right { width: 25%; }
 

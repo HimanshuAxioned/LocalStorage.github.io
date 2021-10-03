@@ -47,12 +47,12 @@ a { text-decoration: none;}
 .icon {
   font-family: "Font Awesome 5 Free"; 
   font-weight: 900; 
-  /* text-indent: -9999px; */
+  text-indent: -9999px;
 }
 
 .icon::before {
-  /* float: left; */
-  /* text-indent: 0; */
+  float: left;
+  text-indent: 0;
  }
 
 /* start */
@@ -121,16 +121,131 @@ header .icon {
   background-color: #5fb6c8;
 }
 
-.hamburger { 
-  position: relative;
-  top: 1em;
-  right: 0;
- }
-
 .search::before { content: '\f002'; }
 .house::before { content: '\f015';}
 .mail::before { content: '\f0e0'; }
 
+.hamburger { 
+  position: absolute;
+  top: 1em;
+  right: 3%;
+  display: none;
+}
+
+.close::before { 
+  content: "\f00d"; 
+  color: #000;
+}
+
+.hamburger::before{
+  content: "\f0c9";
+  color: #000;
+  font-size: 2em;
+}
+
 /* section main */
 
 .main { margin-top: 7em; }
+
+.main-list { 
+  width: 74%;
+  padding-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-list h3 {
+  padding-bottom: 0.5em;
+  color: #309298;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.main-list h3::first-letter { text-transform: capitalize; }
+
+.main-list li { 
+  padding: 0 0.4em;
+  border-right: 4px solid #eae3dd;
+}
+
+.main-list li:first-child { 
+  padding: 0; 
+  padding-right: 0.5em;
+}
+
+.main-list li:last-child { 
+  padding-right: 0;
+  border-right: none;
+}
+
+.main-list p { 
+  color: #b9b9b9;
+  font-size: 10px;
+}
+
+.main-content { 
+  width: 100%;
+  display: flex; 
+}
+
+.main-left { 
+  width: 74%;
+  padding-top: 1em;
+  background-color:#eae3dd;
+}
+
+.main-item { 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.agosto { 
+  width: 14%; 
+  padding:0 0.8em;
+  padding-top: 3.3em;
+  border-right: 1px solid #b9b9b9;
+  text-align: right;
+}
+
+.agosto h3 { 
+  padding-bottom: 2em;
+  color: #309298;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.agosto p { 
+  font-size: 0.6em;
+  text-transform: capitalize;
+}
+
+.agosto-list { padding-top: 1.8em; }
+.agosto-list > li { padding-bottom: 1.8em; }
+.social-link { line-height: 0.5em; }
+
+.agosto > p > span { 
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.agosto-list h4 { 
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.agosto-list a { 
+  color: #000000;
+  font-size: 0.6em;
+  text-transform: capitalize;
+}
+
+
+
+
+.main-storage { width: 80%; }
+
+.main-right { width: 25%; }
+

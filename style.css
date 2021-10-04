@@ -272,6 +272,18 @@ header .icon {
   padding-bottom: 1.8em;
 }
 
+.main-storage figure { 
+  width: 100%;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+.main-storage img { 
+  width: 100%;
+  max-height: 17em;
+  object-fit: cover;
+ }
+
 .main-storage form { 
   width: 50%;
   margin: 0 auto;
@@ -572,3 +584,149 @@ input[type= button], input[type= submit] { cursor: pointer;}
   border: 3px solid #5fb6c8;
 }
 
+/* footer */
+
+footer { 
+  margin-bottom: 10em;
+  padding: 4.5em 0;
+  background-color: #309298;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  /* z-index: -1; */
+}
+
+.footer-list { 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.footer-list li { width: 23%; }
+.footer-list h3::first-letter{ text-transform: capitalize; }
+
+
+.footer-list h3 { 
+  padding-bottom: 1em;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.footer-list p { 
+  padding-bottom: 1em;
+  font-size: 0.6em; 
+}
+
+.twitter-link { 
+  color: #ffffff;
+  font-size: 0.55em;
+  text-transform: capitalize;
+}
+
+.social-icon { 
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-left: 10%;
+  border-top: 1px solid #5fb6c8;
+  position: relative;
+  display: flex;
+}
+
+.social-icon .icon{ position: absolute; }
+
+.social-icon .icon::before { 
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.twitter::before { 
+  content: '\f099';
+  color: #1DA1F2;
+}
+
+.facebook::before { 
+  content: '\f39e';
+  color: #4267B2;
+}
+
+.wifi::before { 
+  content: '\f39e';
+  color: #4267B2;
+}
+
+.footer-item li { width: 100%;}
+
+.footer-item h4 {
+  padding-bottom: 1em;
+  color: #ffffff;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
+footer figure {
+  width:  100%;
+  position: relative;
+}
+
+footer img { 
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.footer-list input, .footer-list textarea { 
+  width: 75%; 
+  margin-left: 29%;
+  padding: 0.1em;
+  border: 1px solid #5fb6c8;
+  background:none;
+}
+
+.footer-list textarea { max-height: 5em;}
+
+.footer-list label {  
+  width: 5em;
+  padding: 0.4em 0.5em;
+  position: absolute;
+  color: #146575;
+  background-color: #5fb6c8;
+  font-size: 0.7em;
+  text-transform: capitalize;
+}
+
+.footer-list div { margin-bottom: 1em; }
+
+.form-button { 
+  padding: 1.2em;
+  border: none;
+  position: relative;
+  background-color: #5fb6c8;
+  float: right;
+}
+
+.form-button .arrow {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.copyright { 
+  width: 20%;
+  padding: 0 1em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d6cece;
+  font-size: 0.7em;
+  text-transform: capitalize;
+}

@@ -761,11 +761,14 @@ footer img {
 
 @media screen and (max-width: 950px){
   header { padding: 1em 0; }
+  
   .hamburger { display: block; }
   .header-content { display: block;}
   .responsive-nav { display: none; }
 
   .nav-item { 
+    width: 90%;
+    border-bottom: 2px solid #5fb6c8;
     position: relative;
     top: 5em;
     left: 5%;
@@ -790,9 +793,12 @@ footer img {
     padding: 1em 0;
   }
 
-  .house , .mail { position: absolute; }
-  .house { right: 7em; }
-  .mail { right: 5em; }
+  .house , .mail { 
+    position: absolute; 
+    top: 0 ;
+  }
+  .house { right: 5em;  }
+  .mail { right: 3em; }
   
   .main-list { width: 100%; }
   .main-content { flex-direction: column; }  
@@ -877,11 +883,11 @@ footer img {
 
 
 @media screen and (max-width: 550px) {
+  .nav-list a { font-size: 0.5em; }
   .comentarios-heading { width: 90%; }
   .comentarios-list > li:last-child .comentarios-heading { width: 100%; }
   .comentarios h4 { font-size: 0.7em; }
   .comentarios-heading span { font-size: 0.6em; }
   .reply { font-size: 0.55em; }
-
   .newsletter .arrow::before { top: 63%; }
 } 

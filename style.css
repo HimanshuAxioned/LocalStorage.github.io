@@ -762,7 +762,8 @@ footer img {
 @media screen and (max-width: 950px){
   header { padding: 1em 0; }
   .hamburger { display: block; }
-  .header-content { display: none;}
+  .header-content { display: block;}
+  .responsive-nav { display: none; }
 
   .nav-item { 
     position: relative;

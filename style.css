@@ -70,7 +70,7 @@ a:hover { color: #ff0000; }
 /* header */
 
 header { position: relative; }
-header .wrapper { display: flex; }
+.header-content { display: flex; }
 .nav-item form { position: relative; }
 
 .nav-item {  
@@ -135,7 +135,7 @@ header .icon {
 
 .hamburger { 
   position: absolute;
-  top: 1em;
+  top: 0.5em;
   right: 3%;
   display: none;
 }
@@ -148,7 +148,6 @@ header .icon {
 .hamburger::before{
   content: "\f0c9";
   color: #000;
-  font-size: 2em;
 }
 
 /* section main */
@@ -460,7 +459,6 @@ input[type= button], input[type= submit] { cursor: pointer;}
 
 .newsletter .arrow {
   color: #ffffff;
-  
   text-indent: -9999px;
 }
 
@@ -552,12 +550,12 @@ input[type= button], input[type= submit] { cursor: pointer;}
 
 .big { 
   color: #309298;
-  font-size: 1.65em;
+  font-size: 1.8em;
 }
 
 .medium {
   color: #5fb6c8;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* galeria */
@@ -678,7 +676,7 @@ footer img {
 
 .footer-list input, .footer-list textarea { 
   width: 75%; 
-  margin-left: 29%;
+  margin-left: 4.2em;
   padding: 0.1em;
   border: 1px solid #5fb6c8;
   background:none;
@@ -729,3 +727,160 @@ footer img {
   font-size: 0.7em;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 1162px) {
+  .main-list h3 { font-size: 0.8em;}
+
+  .nav-item { 
+    width: 50%;
+    margin-left: 40% ;
+  }
+
+  .comentarios-heading { width: 75%; }
+  .comentarios-list > li:last-child .comentarios-heading { width: 85%; }
+  .big { font-size: 1.3em; }
+  .medium { font-size: 1.1em; }
+}
+
+@media screen and (max-width: 1099px) {
+  .main-list h3 { font-size: 0.7em;}
+  .footer-list h3 { font-size: 1em; }
+}
+
+@media screen and (max-width: 1074px) {
+  .main-list h3 { font-size: 0.65em;}
+  .main-list p { font-size: 0.5em; }
+  .agosto h3 { font-size: 0.8em; }
+  .agosto h4 { font-size: 0.6em; }
+  .agosto p { font-size: 0.55em; }
+  .main-storage { font-size: 0.8em; }
+  .noticias p { font-size: 0.55em; }
+  .footer-list h4 { font-size: 0.5em; }
+  .footer-list p { font-size: 0.5em; }
+}
+
+@media screen and (max-width: 950px){
+  header { padding: 1em 0; }
+  .hamburger { display: block; }
+  .header-content { display: none;}
+
+  .nav-item { 
+    position: relative;
+    top: 5em;
+    left: 5%;
+    transform: translateX(-50%);
+  }
+
+
+  .nav-list { flex-direction: column; }
+  .nav-list a { border-right: none; }
+
+  .nav-list li { 
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 2em; 
+    text-align: center;
+  }
+  
+
+  .header-content input { 
+    width: 100%; 
+    margin-left: 0;
+    padding: 1em 0;
+  }
+
+  .house , .mail { position: absolute; }
+  .house { right: 7em; }
+  .mail { right: 5em; }
+  
+  .main-list { width: 100%; }
+  .main-content { flex-direction: column; }  
+  .main-left, .main-right { 
+    width: 100%; 
+    margin-bottom: 5em;
+  }
+
+  .main-right h3 { font-size: 1.1em; }
+  .main-storage p { font-size: 0.9em;}
+  .newsletter label { font-size: 1em; }
+  .newsletter input { padding: 0.5em 0; }
+
+  .newsletter .arrow::before { 
+    padding: 0.5em 0.5em;
+    top: 53%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  .patrocionadores-list li { width: 100%; }
+  .noticias-list h5 { font-size: 1em; }
+  .noticias-list p { font-size: 0.9em; }
+  .footer-list { flex-direction: column; }
+  
+  footer { 
+    position: relative;
+    transform: none; 
+  }
+
+  .footer-list li { 
+    width: 100%; 
+    padding-bottom: 2em;
+  }
+
+  .footer-list h3 { font-size: 1.5em; }
+  .footer-list h4 { font-size: 0.9em; }
+  .footer-list p, .twitter-link { font-size: 0.9em; }
+  .footer-list label { font-size: 1em; }
+  .copyright { bottom: -5em; }
+
+  .footer-list input, .footer-list textarea { 
+    padding: 0.5em 0;
+    margin-left: 6em;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+
+  .main-list { flex-wrap: wrap; }
+
+  .main-list li { 
+    width: 35%;
+    padding-bottom: 1em;
+    border-right: none;
+    font-size: 1.1em;
+  }
+
+  .agosto { 
+    text-align: center;
+    border-right: none;
+  }
+
+  .agosto h4 { 
+    font-size: 0.9em; 
+    padding-bottom: 0.3em;
+  }
+
+  .main-item { flex-direction: column-reverse; }
+  .main-storage, .agosto { width: 100%; }
+  .main-storage form { width: 100%; }
+  .agosto h3 { font-size: 1em; }
+  .agosto p, .agosto a { font-size: 0.8em; }
+  .social-link li { padding: 0.3em 0; }
+  .comentarios h4 { font-size: 0.8em; }
+  .comentarios-heading span { font-size: 0.7em; }
+  .reply { font-size: 0.7em; }
+  .newsletter label { font-size: 0.7em; }
+  .copyright { width: 40%; }
+}
+
+
+@media screen and (max-width: 550px) {
+  .comentarios-heading { width: 90%; }
+  .comentarios-list > li:last-child .comentarios-heading { width: 100%; }
+  .comentarios h4 { font-size: 0.7em; }
+  .comentarios-heading span { font-size: 0.6em; }
+  .reply { font-size: 0.55em; }
+
+  .newsletter .arrow::before { top: 63%; }
+} 
